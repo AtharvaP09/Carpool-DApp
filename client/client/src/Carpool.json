@@ -1,0 +1,235 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fare",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_seatsAvailable",
+          "type": "uint256"
+        }
+      ],
+      "name": "createRide",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rideId",
+          "type": "uint256"
+        }
+      ],
+      "name": "bookRide",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rideId",
+          "type": "uint256"
+        }
+      ],
+      "name": "completeRide",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rideCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rides",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "driver",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fare",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "seatsAvailable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isCompleted",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rideId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRide",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rideExists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRideCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "rideId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "driver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "fare",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "seatsAvailable",
+          "type": "uint256"
+        }
+      ],
+      "name": "RideCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "rideId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "passenger",
+          "type": "address"
+        }
+      ],
+      "name": "RideBooked",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "rideId",
+          "type": "uint256"
+        }
+      ],
+      "name": "RideCompleted",
+      "type": "event"
+    }
+  ],
+  "networks": {
+    "5777": {
+      "address": "0x6c884fC2356028c1F4B58E7606f051784Fc5c0d6"
+    },
+    "1337": {
+      "address": "0x6c884fC2356028c1F4B58E7606f051784Fc5c0d6"
+    },
+    "11155111": {
+      "address": "0x6c884fC2356028c1F4B58E7606f051784Fc5c0d6"
+    }
+  }
+}
